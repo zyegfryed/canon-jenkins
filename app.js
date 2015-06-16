@@ -12,6 +12,4 @@ document.observe("dom:loaded", function () {
         var autoRefreshLink = new Element('span').update(autoRefreshSelector[0].innerHTML);
         $$('span.jenkins_ver')[0].insert({before:autoRefreshLink});
     }
-    // Click logo, go home.
-    $$('div.logo')[0].on('click', function(){ location = '/'; });
 });
